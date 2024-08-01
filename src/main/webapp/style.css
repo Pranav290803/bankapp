@@ -1,0 +1,131 @@
+
+:root {
+    --primary-bg: #E9F5F9; 
+    --primary-color: #004D6E; 
+    --secondary-color: #408080; 
+    --accent-color: #D62839; 
+    --text-color: #2D2D2D; 
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+
+.user-details-box {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    width: calc(100% - 24px); 
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+td, th {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #F9F9F9;
+}
+
+
+.alert {
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+.download-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
